@@ -1,0 +1,32 @@
+2023-04-01 23:45:49,428 INFO    MainThread:12952 [wandb_setup.py:_flush():76] Configure stats pid to 12952
+2023-04-01 23:45:49,428 INFO    MainThread:12952 [wandb_setup.py:_flush():76] Loading settings from C:\Users\angel\.config\wandb\settings
+2023-04-01 23:45:49,428 INFO    MainThread:12952 [wandb_setup.py:_flush():76] Loading settings from D:\CUSAT_EYE\ai_project\wandb\settings
+2023-04-01 23:45:49,428 INFO    MainThread:12952 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-04-01 23:45:49,429 INFO    MainThread:12952 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-04-01 23:45:49,429 INFO    MainThread:12952 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'new.py', 'program': 'd:\\CUSAT_EYE\\ai_project\\new.py'}
+2023-04-01 23:45:49,430 INFO    MainThread:12952 [wandb_init.py:_log_setup():506] Logging user logs to D:\CUSAT_EYE\ai_project\wandb\run-20230401_234549-nm4r69pr\logs\debug.log
+2023-04-01 23:45:49,430 INFO    MainThread:12952 [wandb_init.py:_log_setup():507] Logging internal logs to D:\CUSAT_EYE\ai_project\wandb\run-20230401_234549-nm4r69pr\logs\debug-internal.log
+2023-04-01 23:45:49,430 INFO    MainThread:12952 [wandb_init.py:init():546] calling init triggers
+2023-04-01 23:45:49,430 INFO    MainThread:12952 [wandb_init.py:init():552] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.02, 'architecture': 'CNN', 'dataset': 'CIFAR-100', 'epochs': 10}
+2023-04-01 23:45:49,430 INFO    MainThread:12952 [wandb_init.py:init():602] starting backend
+2023-04-01 23:45:49,430 INFO    MainThread:12952 [wandb_init.py:init():606] setting up manager
+2023-04-01 23:45:49,439 INFO    MainThread:12952 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-04-01 23:45:49,453 INFO    MainThread:12952 [wandb_init.py:init():613] backend started and connected
+2023-04-01 23:45:49,456 INFO    MainThread:12952 [wandb_init.py:init():701] updated telemetry
+2023-04-01 23:45:49,458 INFO    MainThread:12952 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-04-01 23:45:50,407 INFO    MainThread:12952 [wandb_run.py:_on_init():2133] communicating current version
+2023-04-01 23:45:50,527 INFO    MainThread:12952 [wandb_run.py:_on_init():2142] got version response 
+2023-04-01 23:45:50,527 INFO    MainThread:12952 [wandb_init.py:init():789] starting run threads in backend
+2023-04-01 23:45:50,660 INFO    MainThread:12952 [wandb_run.py:_console_start():2114] atexit reg
+2023-04-01 23:45:50,661 INFO    MainThread:12952 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-04-01 23:45:50,662 INFO    MainThread:12952 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-04-01 23:45:50,662 INFO    MainThread:12952 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-04-01 23:45:50,662 INFO    MainThread:12952 [wandb_init.py:init():831] run started, returning control to user process
+2023-04-01 23:45:50,664 INFO    MainThread:12952 [wandb_run.py:_finish():1854] finishing run projectcusat/my-awesome-project/nm4r69pr
+2023-04-01 23:45:50,665 INFO    MainThread:12952 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-04-01 23:45:50,665 INFO    MainThread:12952 [wandb_run.py:_restore():2066] restore
+2023-04-01 23:45:50,665 INFO    MainThread:12952 [wandb_run.py:_restore():2072] restore done
+2023-04-01 23:45:56,120 INFO    MainThread:12952 [wandb_run.py:_footer_history_summary_info():3422] rendering history
+2023-04-01 23:45:56,120 INFO    MainThread:12952 [wandb_run.py:_footer_history_summary_info():3454] rendering summary
+2023-04-01 23:45:56,126 INFO    MainThread:12952 [wandb_run.py:_footer_sync_info():3380] logging synced files

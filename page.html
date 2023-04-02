@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+      #hero li,
+      #hero2 li {
+        opacity: 0;
+        transform: translateY(50px);
+        animation: slideIn 0.5s forwards;
+      }
+
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  #loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.loading-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.loading-animation {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #007bff;
+  margin-right: 10px;
+  animation: loading 2s ease-in-out infinite;
+}
+
+.loading-text {
+  margin-right: 10px;
+}
+
+#loading-progress {
+  width: 0%;
+  height: 10px;
+  background-color: #007bff;
+  margin-top: 20px;
+  transition: width 1s, background-color 1s;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.image-row img {
+  width: 50%;
+  height: auto;
+  margin: 0 10px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .image-row {
+    flex-wrap: wrap;
+  }
+  
+  .image-row img {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+h1 {
+			background-color: #008080;
+			color: #fff;
+			font-size: 2.5em;
+			padding: 20px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		h2 {
+			background-color: rgba(255, 255, 255, 0.9);
+			border-bottom: 2px solid #008080;
+			color: #008080;
+			font-size: 1.5em;
+			padding: 10px 0;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		table {
+			border-collapse: collapse;
+			margin: 0 auto;
+			width: 80%;
+		}
+		th, td {
+			border: 1px solid #008080;
+			padding: 10px;
+			text-align: center;
+		}
+		th {
+			background-color: #008080;
+			color: #fff;
+			font-size: 1.2em;
+			text-transform: uppercase;
+		}
+
+		.block {
+			margin: 20px;
+			padding: 20px;
+			background-color: #f2f2f2;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #888888;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		/* Styling for the button */
+		.button {
+			margin-top: 10px;
+			padding: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: bold;
+			transition: background-color 0.3s ease;
+		}
+
+		.button:hover {
+			background-color: #3e8e41;
+		}
+
+		/* Styling for the topic name */
+		h2 {
+			margin: 0;
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		/* Styling for the YouTube link */
+		p {
+			margin: 10px 0 0 0;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+</style>
+</head>
+
+  
+  
+<body class="" style="background-image: url(images/book.avif);">
+	
+	<div id="loading-screen">
+		<div class="loading-message">
+		  <span class="loading-animation"></span>
+		  <span class="loading-text">Doing OCR of pdfs</span>
+		</div>
+		<div class="loading-message">
+		  <span class="loading-animation"></span>
+		  <span class="loading-text">Using NLP to tokenize each question</span>
+		</div>
+		<div class="loading-message">
+		  <span class="loading-animation"></span>
+		  <span class="loading-text">Using hierarchical clustering</span>
+		</div>
+		<div class="loading-message">
+		  <span class="loading-animation"></span>
+		  <span class="loading-text">Using OpenAI to get important topics</span>
+		</div>
+		<div id="loading-progress"></div>
+	  </div>
+	  <h1>PYQ Analysis using AI</h1>
+	  <div class="image-row">
+		<img src="images/gf1.png" alt="Image 1">
+		<img src="images/gf2.png" alt="Image 2">
+	  </div>
+
+	  <h2>Question Bank</h2>
+    <ul id="hero" class="bg-Grey px-10 py-6 rounded-lg font-medium my-10 mx-10 rounded-xl">
+    </ul>
+	
+	<h2>IMPORTANT TOPICS AND EXTRA QUESTIONS</h2>
+	<div class="block">
+		<h2>Number Conversions</h2>
+		<p><a href="https://www.youtube.com/watch?v=crSGS1uBSNQ" target="_blank">YouTube Link</a></p>
+		<button class="button" onclick="window.location.href='https://www.youtube.com/watch?v=crSGS1uBSNQ'">Watch Video</button>
+		<ul>
+			<li>(a) How to convert (101011)2 to decimal?</li>
+			<li>(b) Convert (ABCD)16 to binary.</li>
+			<li>(c) Convert (657)8 to binary.</li>
+		</ul>
+	</div>
+	<div class="block">
+		<h2>Boolean Functions</h2>
+		<p><a href="https://www.youtube.com/watch?v=r4fPcnu8sU0" target="_blank">YouTube Link</a></p>
+		<button class="button" onclick="window.location.href='https://www.youtube.com/watch?v=r4fPcnu8sU0'">Watch Video</button>
+		<ul>
+			<li>(a) Simplify the following function using Boolean algebra: F(A,B,C) = AB'C + AB + A'C</li>
+			<li>(b) What are the basic postulates of Boolean algebra?</li>
+			<li>(c) Convert the following function into NAND gate implementation: F(A,B,C) = (A+B)'(A+C)</li>
+		</ul>
+	</div>
+
+	<div class="block">
+		<h2>Design of Combinational Circuits</h2>
+		<p><a href="https://www.youtube.com/watch?v=Hm4PxYzBTcY" target="_blank">YouTube Link</a></p>
+		<button class="button" onclick="window.location.href='https://www.youtube.com/watch?v=Hm4PxYzBTcY'">Watch on YouTube</button>
+		<h3>Extra questions:</h3>
+		<ol>
+			<li>(a) Design a 2-to-4 decoder using NAND gates.</li>
+			<li>(b) What is the difference between a combinational and sequential circuit?</li>
+			<li>(c) Design an adder-subtractor circuit using logic gates.</li>
+		</ol>
+	</div>
+
+	<div class="block">
+		<h2>Multiplexers and Demultiplexers</h2>
+		<p><a href="https://www.youtube.com/watch?v=gK0tZtFTXYA" target="_blank">YouTube Link</a></p>
+		<button class="button" onclick="window.location.href='https://www.youtube.com/watch?v=gK0tZtFTXYA'">Watch on YouTube</button>
+		<h3>Extra questions:</h3>
+		<ol>
+			<li>(a) What is the purpose of a demultiplexer?</li>
+			<li>(b) Design a 4-to-1 multiplexer using NAND gates.</li>
+			<li>(c) What is the difference between a decoder and a demultiplexer?</li>
+		</ol>
+	</div>
+
+	<div class="block">
+		<h2>Counters</h2>
+		<p><a href="https://www.youtube.com/watch?v=MgZDeSO_GOw" target="_blank">YouTube Link</a></p>
+		<button class="button" onclick="window.location.href='https://www.youtube.com/watch?v=MgZDeSO_GOw'">Watch on YouTube</button>
+		<h3>Extra questions:</h3>
+		<ol>
+			<li>(a) Explain the working of a Johnson counter.</li>
+			<li>(b) Design a 3-bit up-down counter using T flip-flops.</li>
+			<li>(c) Draw the truth table of a JK flip-flop.</li>
+		</ol>
+	</div>
+
+	<div class="block">
+		<h2>Fan in and Fan out</h2>
+		<p><a href="https://www.youtube.com/watch?v=vTmTgrGrul4" target="_blank">YouTube Link</a></p>
+		<button class="button" onclick="window.location.href='https://www.youtube.com/watch?v=vTmTgrGrul4'">Watch on YouTube</button>
+		<h3>Extra questions:</h3>
+		<ol>
+			<li>(a) What is the maximum fan-out of a TTL gate?</li>
+			<li>(b) Design a circuit with fan-in of 3 and fan-out of 2.</li>
+			<li>(c) What are the factors affecting fan-out?</li>
+		</ol>
+	</div>
+
+	<div class="block">
+		<h2>TTL and CMOS Logic Families</h2>
+		<p><a href="https://www.youtube.com/watch?v=3A3oKvnB_gY" target="_blank">YouTube Link</a></p>
+		<button class="button" onclick="window.location.href='https://www.youtube.com/watch?v=3A3oKvnB_gY';">Watch on YouTube</button>
+		<h3>Extra questions:</h3>
+		<ol>
+			<li>What are the advantages of CMOS over TTL?</li>
+			<li>Explain the working of a TTL inverter.</li>
+			<li>Design a 2-input CMOS NOR gate using two inverters and one NOR gate.</li>
+		</ol>
+	</div>
+	
+	<div class="block">
+		<h2>Karnaugh Maps</h2>
+		<p><a href="https://www.youtube.com/watch?v=Vy4PEy1OcOQ" target="_blank">YouTube Link</a></p>
+		<button class="button" onclick="window.location.href='https://www.youtube.com/watch?v=Vy4PEy1OcOQ';">Watch on YouTube</button>
+		<h3>Extra questions:</h3>
+		<ol>
+			<li>Simplify the following function using a K-map: F(A,B,C,D) = ∑(0,1,3,7,8,9,11,15)</li>
+			<li>What are the advantages of a K-map over Boolean algebra?</li>
+			<li>How many cells are there in a 5-variable K-map?</li>
+		</ol>
+	</div>
+	
+	<div class="block">
+		<h2>Adders and Comparators</h2>
+		<p><a href="https://www.youtube.com/watch?v=PGA52YSVKdI" target="_blank">YouTube Link</a></p>
+		<button class="button" onclick="window.location.href='https://www.youtube.com/watch?v=PGA52YSVKdI';">Watch on YouTube</button>
+		<h3>Extra questions:</h3>
+		<ol>
+			<li>Design a 4-bit subtractor using an adder and a 2's complementer.</li>
+			<li>What is the difference between a magnitude and signed comparator?</li>
+			<li>Draw the block diagram of an 8-bit BCD adder.</li>
+		</ol>
+	</div>
+	
+	<div class="block">
+		<h2>Latches and Flip-flops</h2>
+		<p><a href="https://www.youtube.com/watch?v=m33_UQ7TYAY" target="_blank">YouTube Link</a></p>
+		<button class="button" onclick="window.location.href='https://www.youtube.com/watch?v=m33_UQ7TYAY';">Watch on YouTube</button>
+		<h3>Extra questions:</h3>
+		<ol>
+			<li>Design an SR flip-flop using NAND gates.</li>
+			<li>What is the difference between a latch and a flip-flop?</li>
+			<li>Explain the working of a D flip-flop with the help of a timing diagram.</li>
+		</ol>
+	</div>
+	
+
+
+    <script>
+
+var messages = ['Doing OCR of pdfs', 'Using NLP to tokenize each question', 'Using hierarchical clustering', 'Using OpenAI to get important topics'];
+var duration = 30; // seconds
+var progress = 0;
+var currentMessage = 0;
+var progressBarInterval;
+
+function updateProgress() {
+  progress += 100 / messages.length;
+  document.getElementById('loading-progress').style.width = progress + '%';
+
+  if (progress >= 2 && currentMessage === 0) {
+    document.querySelector('.loading-message:nth-child(1) .loading-animation').style.backgroundColor = '#7FFF00';
+    document.querySelector('.loading-message:nth-child(1) .loading-text').style.color = '#7FFF00';
+    currentMessage++;
+  } else if (progress >= 8 && currentMessage === 1) {
+    document.querySelector('.loading-message:nth-child(2) .loading-animation').style.backgroundColor = '#7FFF00';
+    document.querySelector('.loading-message:nth-child(2) .loading-text').style.color = '#7FFF00';
+    currentMessage++;
+  } else if (progress >= 12 && currentMessage === 2) {
+    document.querySelector('.loading-message:nth-child(3) .loading-animation').style.backgroundColor = '#7FFF00';
+    document.querySelector('.loading-message:nth-child(3) .loading-text').style.color = '#7FFF00';
+    currentMessage++;
+  } else if (progress >= 17 && currentMessage === 3) {
+    document.querySelector('.loading-message:nth-child(4) .loading-animation').style.backgroundColor = '#7FFF00';
+    document.querySelector('.loading-message:nth-child(4) .loading-text').style.color = '#7FFF00';
+    currentMessage++;
+  } else if (progress >= 21 && currentMessage === 4) {
+    document.querySelector('.loading-message:nth-child(5) .loading-animation').style.backgroundColor = '#7FFF00';
+    document.querySelector('.loading-message:nth-child(5) .loading-text').style.color = '#7FFF00';
+    currentMessage++;
+  }
+
+  if (progress >= 100) {
+    clearInterval(progressBarInterval);
+    document.getElementById('loading-screen').style.display = 'none';
+  }
+}
+
+progressBarInterval = setInterval(updateProgress, duration * 1000 / messages.length);
+
+
+
+     // Create a new XMLHttpRequest object for ID file
+let xhr1 = new XMLHttpRequest();
+// Define the URL of the ID text file
+let url1 = "cluqn.txt";
+
+// Open the ID file using the GET method
+xhr1.open("GET", url1, true);
+
+// Define the callback function for when the ID file is loaded
+xhr1.onload = function() {
+// Check if the status code is OK
+if (xhr1.status === 200) {
+// Split the ID text file content into an array of lines
+let lines1 = xhr1.responseText.split("\n");
+
+
+	// Get the unordered list element for ID list from the HTML page
+	let ul1 = document.getElementById("hero");
+
+	// Loop through each line and add it as a list item to the unordered list for ID list
+	for (let i = 0; i < lines1.length; i++) {
+		let li1 = document.createElement("li");
+		let text1 = document.createTextNode(lines1[i]);
+		li1.appendChild(text1);
+		ul1.appendChild(li1);
+	}
+}
+};
+
+// Send the request to the server for ID file
+xhr1.send();
+
+// Create a new XMLHttpRequest object for text file
+let xhr2 = new XMLHttpRequest();
+
+// Define the URL of the text file
+let url2 = "reply.txt";
+
+// Open the text file using the GET method
+xhr2.open("GET", url2, true);
+
+// Define the callback function for when the text file is loaded
+xhr2.onload = function() {
+// Check if the status code is OK
+if (xhr2.status === 200) {
+// Split the text file content into an array of lines
+let lines2 = xhr2.responseText.split("\n");
+
+
+	// Get the unordered list element from the HTML page
+	let ul2 = document.getElementById("hero2");
+
+	// Loop through each line and add it as a list item to the unordered list for text list
+	for (let i = 0; i < lines2.length; i++) {
+		let li2 = document.createElement("li");
+		let text2 = document.createTextNode(lines2[i]);
+		li2.appendChild(text2);
+		ul2.appendChild(li2);
+	}
+}
+};
+
+// Send the request to the server for text file
+xhr2.send();
+
+
+</script>
+
+
+
+</body>
+</html>

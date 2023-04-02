@@ -1,0 +1,61 @@
+Topic Name	                                                        YouTube Link
+
+1. Number Conversions	                              https://www.youtube.com/watch?v=5HBKjR_5Z34
+Extra questions: 
+(a) How to convert (101011)2 to decimal?
+(b) Convert (ABCD)16 to binary.
+(c) Convert (657)8 to binary.
+
+2. Boolean Functions	                        https://www.youtube.com/watch?v=r4fPcnu8sU0
+Extra questions:
+(a) Simplify the following function using Boolean algebra: F(A,B,C) = AB'C + AB + A'C
+(b) What are the basic postulates of Boolean algebra?
+(c) Convert the following function into NAND gate implementation: F(A,B,C) = (A+B)'(A+C)
+
+3. Design of Combinational Circuits	https://www.youtube.com/watch?v=Hm4PxYzBTcY
+Extra questions:
+(a) Design a 2-to-4 decoder using NAND gates.
+(b) What is the difference between a combinational and sequential circuit?
+(c) Design an adder-subtractor circuit using logic gates.
+
+4. Multiplexers and Demultiplexers	https://www.youtube.com/watch?v=gK0tZtFTXYA
+Extra questions:
+(a) What is the purpose of a demultiplexer?
+(b) Design a 4-to-1 multiplexer using NAND gates.
+(c) What is the difference between a decoder and a demultiplexer?
+
+5. Counters	                                            https://www.youtube.com/watch?v=MgZDeSO_GOw
+Extra questions:
+(a) Explain the working of a Johnson counter.
+(b) Design a 3-bit up-down counter using T flip-flops.
+(c) Draw the truth table of a JK flip-flop.
+
+6. Fan in and Fan out	                              https://www.youtube.com/watch?v=vTmTgrGrul4
+Extra questions:
+(a) What is the maximum fan-out of a TTL gate?
+(b) Design a circuit with fan-in of 3 and fan-out of 2.
+(c) What are the factors affecting fan-out?
+
+7. TTL and CMOS Logic Families	           https://www.youtube.com/watch?v=3A3oKvnB_gY
+Extra questions:
+(a) What are the advantages of CMOS over TTL?
+(b) Explain the working of a TTL inverter.
+(c) Design a 2-input CMOS NOR gate using two inverters and one NOR gate.
+
+8. Karnaugh Maps	                                     https://www.youtube.com/watch?v=Vy4PEy1OcOQ
+Extra questions:
+(a) Simplify the following function using a K-map: F(A,B,C,D) = ∑(0,1,3,7,8,9,11,15)
+(b) What are the advantages of a K-map over Boolean algebra?
+(c) How many cells are there in a 5-variable K-map?
+
+9. Adders and Comparators	                    https://www.youtube.com/watch?v=OdCyhX9SXJY
+Extra questions:
+(a) Design a 4-bit subtractor using an adder and a 2's complementer.
+(b) What is the difference between a magnitude and signed comparator?
+(c) Draw the block diagram of an 8-bit BCD adder.
+
+10. Latches and Flip-flops	                            https://www.youtube.com/watch?v=m33_UQ7TYAY
+Extra questions:
+(a) Design an SR flip-flop using NAND gates.
+(b) What is the difference between a latch and a flip-flop?
+(c) Explain the working of a D flip-flop with the help of a timing diagram.

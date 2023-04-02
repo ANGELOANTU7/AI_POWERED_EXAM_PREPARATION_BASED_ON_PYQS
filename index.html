@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="" style="background-image: url(images/book.avif);">
+<h1 class="m-5 text-center text-5xl font-bold text-darkB">File Upload Example</h1>
+<form 
+class="flex drop-shadow-6xl items-center justify-center space-x-10"
+action="http://localhost:3000/upload" method="POST" enctype="multipart/form-data">
+<div class='bg-Grey px-10 py-6 rounded-lg mt-20'>  
+<label
+class='text-2xl font-semibold md:text-1xl'>Upload PDFs:</label>
+  <input 
+  class='hover:text-darkB'
+  placeholder="Upload file" type="file" name="pdfs" multiple>
+  <br><br>
+  <label
+  class='text-2xl font-semibold md:text-1xl'
+  >Upload Syllabus:</label>
+  <input 
+  class='hover:text-normal'
+  placeholder="Upload file" type="file" name="syllabus">
+  <br><br>
+  <a href="page.html" class="font-semibold text-xl hover:text-2xl hover:text-neonB">Result</a>
+</div>
+</form> 
+</body>
+</html>

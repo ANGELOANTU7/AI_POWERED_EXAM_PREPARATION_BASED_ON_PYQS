@@ -1,0 +1,36 @@
+{
+    "os": "Windows-10-10.0.25314-SP0",
+    "python": "3.10.0",
+    "heartbeatAt": "2023-04-01T18:15:50.576230",
+    "startedAt": "2023-04-01T18:15:49.423630",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "d:\\CUSAT_EYE\\ai_project\\new.py",
+    "codePath": "new.py",
+    "host": "ANGELO-MI",
+    "username": "angel",
+    "executable": "C:\\Users\\angel\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3110.0,
+        "min": 0.0,
+        "max": 3110.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3110.0,
+            "min": 0.0,
+            "max": 3110.0
+        }
+    ],
+    "disk": {
+        "total": 104.38769149780273,
+        "used": 94.02641296386719
+    },
+    "memory": {
+        "total": 15.788383483886719
+    }
+}

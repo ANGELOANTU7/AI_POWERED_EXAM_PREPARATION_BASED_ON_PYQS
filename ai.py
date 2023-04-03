@@ -12,7 +12,7 @@ from nltk.tokenize import word_tokenize
 from collections import Counter
 import openai
 
-openai.api_key = "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"
+openai.api_key = "apikey"
 
 def extract_questions_from_file(filepath):
     with open(filepath, 'rb') as f:
